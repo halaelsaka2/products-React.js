@@ -1,12 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDom from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
+import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+import App from './app'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+
+import './css/style.css'
+
+
+ReactDom.render(<BrowserRouter> <App /></BrowserRouter>,document.getElementById('root'));
+
+// ReactDom.render(<Provider store={store}><App /></Provider>,document.getElementById('root'));
+
+
+            
